@@ -1,0 +1,27 @@
+.container {
+	margin: 0 auto;
+	width: 80%;
+	max-width: 960px;
+}
+
+.bubble{
+	padding-right: 15px;
+}
+
+.question{
+	
+}
+
+h4{
+	padding-bottom: 1px;
+	margin-bottom: 1px;
+}
+
+table{
+	table-layout: auto;
+	margin-bottom: 10px;
+}
+
+.submit{
+	margin: 10px;
+}

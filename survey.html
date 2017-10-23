@@ -1,0 +1,432 @@
+<!doctype html>
+
+<html lang="en">
+
+	<head>
+		<title> Charity Protocol </title>
+		<link rel="stylesheet" href="css/surveyLayout.css">
+	</head>
+
+	<body class="container">
+
+		<form name="form" method="post" action="../cgi-bin/survey.py" >
+			<h2>Create Account</h2>
+			UserName: <input type="text" name="name" required><BR>
+      		Email:    <input type="text" name="email" required><BR>
+      		Password: <input type="text" name="password" required><BR>
+      		Date: <input type="text" name="date" required><BR>
+      		Time: <input type="text" name="time" required><BR>
+	
+			<h2>How Strongly Do You Agree or Disagree With The Following Statments</h2>
+
+			<h4>Marajuana should be legalized for recreational use</h4>
+			<table class="question">
+				<tr>
+					<td>Strongly Disagree</td> <td class="bubble"><input type="radio" name="mj1" value="-3" required></td>
+					<td>Disagree</td>          <td class="bubble"><input type="radio" name="mj1" value="-2"></td>
+					<td>Slightly Disagree</td> <td class="bubble"><input type="radio" name="mj1" value="-1"></td>
+					<td>Neutral</td>           <td class="bubble"><input type="radio" name="mj1" value="0"></td>
+					<td>Slightly Agree</td>    <td class="bubble"><input type="radio" name="mj1" value="1"></td>
+					<td>Agree</td>             <td class="bubble"><input type="radio" name="mj1" value="2"></td>
+					<td>Strongly Agree</td>    <td class="bubble"><input type="radio" name="mj1" value="3"></td>
+				</tr>
+			</table>
+		
+			<h4>Every human being is either a man, or a woman</h4>
+			<table class="question">
+				<tr>
+					<td>Strongly Disagree</td> <td class="bubble"><input type="radio" name="lgbt1" value="3" required></td>
+					<td>Disagree</td>          <td class="bubble"><input type="radio" name="lgbt1" value="2"></td>
+					<td>Slightly Disagree</td> <td class="bubble"><input type="radio" name="lgbt1" value="1"></td>
+					<td>Neutral</td>           <td class="bubble"><input type="radio" name="lgbt1" value="0"></td>
+					<td>Slightly Agree</td>    <td class="bubble"><input type="radio" name="lgbt1" value="-1"></td>
+					<td>Agree</td>             <td class="bubble"><input type="radio" name="lgbt1" value="-2"></td>
+					<td>Strongly Agree</td>    <td class="bubble"><input type="radio" name="lgbt1" value="-3"></td>
+				</tr>
+			</table>
+
+			<h4>Current gun control laws are too strict, and need to be loosened</h4>
+			<table class="question">
+				<tr>
+					<td>Strongly Disagree</td> <td class="bubble"><input type="radio" name="gun1" value="3" required></td>
+					<td>Disagree</td>          <td class="bubble"><input type="radio" name="gun1" value="2"></td>
+					<td>Slightly Disagree</td> <td class="bubble"><input type="radio" name="gun1" value="1"></td>
+					<td>Neutral</td>           <td class="bubble"><input type="radio" name="gun1" value="0"></td>
+					<td>Slightly Agree</td>    <td class="bubble"><input type="radio" name="gun1" value="-1"></td>
+					<td>Agree</td>             <td class="bubble"><input type="radio" name="gun1" value="-2"></td>
+					<td>Strongly Agree</td>    <td class="bubble"><input type="radio" name="gun1" value="-3"></td>
+				</tr>
+			</table>
+
+			<h4>The United States is a nation of immigrants</h4>
+			<table class="question">
+				<tr>
+					<td>Strongly Disagree</td> <td class="bubble"><input type="radio" name="ref1" value="-3" required></td>
+					<td>Disagree</td>          <td class="bubble"><input type="radio" name="ref1" value="-2"></td>
+					<td>Slightly Disagree</td> <td class="bubble"><input type="radio" name="ref1" value="-1"></td>
+					<td>Neutral</td>           <td class="bubble"><input type="radio" name="ref1" value="0"></td>
+					<td>Slightly Agree</td>    <td class="bubble"><input type="radio" name="ref1" value="1"></td>
+					<td>Agree</td>             <td class="bubble"><input type="radio" name="ref1" value="2"></td>
+					<td>Strongly Agree</td>    <td class="bubble"><input type="radio" name="ref1" value="3"></td>
+				</tr>
+			</table>
+
+			<h4>A woman has the right to an abortion if she does not wish to give birth</h4>
+			<table class="question">
+				<tr>
+					<td>Strongly Disagree</td> <td class="bubble"><input type="radio" name="abort1" value="-3" required></td>
+					<td>Disagree</td>          <td class="bubble"><input type="radio" name="abort1" value="-2"></td>
+					<td>Slightly Disagree</td> <td class="bubble"><input type="radio" name="abort1" value="-1"></td>
+					<td>Neutral</td>           <td class="bubble"><input type="radio" name="abort1" value="0"></td>
+					<td>Slightly Agree</td>    <td class="bubble"><input type="radio" name="abort1" value="1"></td>
+					<td>Agree</td>             <td class="bubble"><input type="radio" name="abort1" value="2"></td>
+					<td>Strongly Agree</td>    <td class="bubble"><input type="radio" name="abort1" value="3"></td>
+				</tr>
+			</table>
+
+			<h4>More immigration = more crime</h4>
+			<table class="question">
+				<tr>
+					<td>Strongly Disagree</td> <td class="bubble"><input type="radio" name="ref2" value="3" required></td>
+					<td>Disagree</td>          <td class="bubble"><input type="radio" name="ref2" value="2"></td>
+					<td>Slightly Disagree</td> <td class="bubble"><input type="radio" name="ref2" value="1"></td>
+					<td>Neutral</td>           <td class="bubble"><input type="radio" name="ref2" value="0"></td>
+					<td>Slightly Agree</td>    <td class="bubble"><input type="radio" name="ref2" value="-1"></td>
+					<td>Agree</td>             <td class="bubble"><input type="radio" name="ref2" value="-2"></td>
+					<td>Strongly Agree</td>    <td class="bubble"><input type="radio" name="ref2" value="-3"></td>
+				</tr>
+			</table>
+
+			<h4>A fetus is a human being, regardless of it's current stage in development</h4>
+			<table class="question">
+				<tr>
+					<td>Strongly Disagree</td> <td class="bubble"><input type="radio" name="abort2" value="3" required></td>
+					<td>Disagree</td>          <td class="bubble"><input type="radio" name="abort2" value="2"></td>
+					<td>Slightly Disagree</td> <td class="bubble"><input type="radio" name="abort2" value="1"></td>
+					<td>Neutral</td>           <td class="bubble"><input type="radio" name="abort2" value="0"></td>
+					<td>Slightly Agree</td>    <td class="bubble"><input type="radio" name="abort2" value="-1"></td>
+					<td>Agree</td>             <td class="bubble"><input type="radio" name="abort2" value="-2"></td>
+					<td>Strongly Agree</td>    <td class="bubble"><input type="radio" name="abort2" value="-3"></td>
+				</tr>
+			</table>
+
+			<h4>Marajuana is harmful to society</h4>
+			<table class="question">
+				<tr>
+					<td>Strongly Disagree</td> <td class="bubble"><input type="radio" name="mj2" value="-3" required></td>
+					<td>Disagree</td>          <td class="bubble"><input type="radio" name="mj2" value="2"></td>
+					<td>Slightly Disagree</td> <td class="bubble"><input type="radio" name="mj2" value="1"></td>
+					<td>Neutral</td>           <td class="bubble"><input type="radio" name="mj2" value="0"></td>
+					<td>Slightly Agree</td>    <td class="bubble"><input type="radio" name="mj2" value="-1"></td>
+					<td>Agree</td>             <td class="bubble"><input type="radio" name="mj2" value="-2"></td>
+					<td>Strongly Agree</td>    <td class="bubble"><input type="radio" name="mj2" value="-3"></td>
+				</tr>
+			</table>
+
+			<h4>I'm pro-life</h4>
+			<table class="question">
+				<tr>
+					<td>Strongly Disagree</td> <td class="bubble"><input type="radio" name="abort3" value="3" required></td>
+					<td>Disagree</td>          <td class="bubble"><input type="radio" name="abort3" value="2"></td>
+					<td>Slightly Disagree</td> <td class="bubble"><input type="radio" name="abort3" value="1"></td>
+					<td>Neutral</td>           <td class="bubble"><input type="radio" name="abort3" value="0"></td>
+					<td>Slightly Agree</td>    <td class="bubble"><input type="radio" name="abort3" value="-1"></td>
+					<td>Agree</td>             <td class="bubble"><input type="radio" name="abort3" value="-2"></td>
+					<td>Strongly Agree</td>    <td class="bubble"><input type="radio" name="abort3" value="-3"></td>
+				</tr>
+			</table>
+
+			<h4>America has an obligation to help refugees</h4>
+			<table class="question">
+				<tr>
+					<td>Strongly Disagree</td> <td class="bubble"><input type="radio" name="ref3" value="-3" required></td>
+					<td>Disagree</td>          <td class="bubble"><input type="radio" name="ref3" value="-2"></td>
+					<td>Slightly Disagree</td> <td class="bubble"><input type="radio" name="ref3" value="-1"></td>
+					<td>Neutral</td>           <td class="bubble"><input type="radio" name="ref3" value="0"></td>
+					<td>Slightly Agree</td>    <td class="bubble"><input type="radio" name="ref3" value="1"></td>
+					<td>Agree</td>             <td class="bubble"><input type="radio" name="ref3" value="2"></td>
+					<td>Strongly Agree</td>    <td class="bubble"><input type="radio" name="ref3" value="3"></td>
+				</tr>
+			</table>
+
+			<h4>Marajuana should retain the FDA classification of a Schedule I substance (the same classification as Heroin and Peyote)</h4>
+			<table class="question">
+				<tr>
+					<td>Strongly Disagree</td> <td class="bubble"><input type="radio" name="mj3" value="3" required></td>
+					<td>Disagree</td>          <td class="bubble"><input type="radio" name="mj3" value="2"></td>
+					<td>Slightly Disagree</td> <td class="bubble"><input type="radio" name="mj3" value="1"></td>
+					<td>Neutral</td>           <td class="bubble"><input type="radio" name="mj3" value="0"></td>
+					<td>Slightly Agree</td>    <td class="bubble"><input type="radio" name="mj3" value="-1"></td>
+					<td>Agree</td>             <td class="bubble"><input type="radio" name="mj3" value="-2"></td>
+					<td>Strongly Agree</td>    <td class="bubble"><input type="radio" name="mj3" value="-3"></td>
+				</tr>
+			</table>
+	
+			<h4>A persons gender is determined by their genitalia</h4>
+			<table class="question">
+				<tr>
+					<td>Strongly Disagree</td> <td class="bubble"><input type="radio" name="lgbt2" value="3" required></td>
+					<td>Disagree</td>          <td class="bubble"><input type="radio" name="lgbt2" value="2"></td>
+					<td>Slightly Disagree</td> <td class="bubble"><input type="radio" name="lgbt2" value="1"></td>
+					<td>Neutral</td>           <td class="bubble"><input type="radio" name="lgbt2" value="0"></td>
+					<td>Slightly Agree</td>    <td class="bubble"><input type="radio" name="lgbt2" value="-1"></td>
+					<td>Agree</td>             <td class="bubble"><input type="radio" name="lgbt2" value="-2"></td>
+					<td>Strongly Agree</td>    <td class="bubble"><input type="radio" name="lgbt2" value="-3"></td>
+				</tr>
+			</table>
+
+			<h4>America would be a better place if no one owned a gun</h4>
+			<table class="question">
+				<tr>
+					<td>Strongly Disagree</td> <td class="bubble"><input type="radio" name="gun2" value="-3" required></td>
+					<td>Disagree</td>          <td class="bubble"><input type="radio" name="gun2" value="-2"></td>
+					<td>Slightly Disagree</td> <td class="bubble"><input type="radio" name="gun2" value="-1"></td>
+					<td>Neutral</td>           <td class="bubble"><input type="radio" name="gun2" value="0"></td>
+					<td>Slightly Agree</td>    <td class="bubble"><input type="radio" name="gun2" value="1"></td>
+					<td>Agree</td>             <td class="bubble"><input type="radio" name="gun2" value="2"></td>
+					<td>Strongly Agree</td>    <td class="bubble"><input type="radio" name="gun2" value="3"></td>
+				</tr>
+			</table>
+
+			<h4>I'm in favor of more legal protections for LGBT people</h4>
+			<table class="question">
+				<tr>
+					<td>Strongly Disagree</td> <td class="bubble"><input type="radio" name="lgbt3" value="-3" required></td>
+					<td>Disagree</td>          <td class="bubble"><input type="radio" name="lgbt3" value="-2"></td>
+					<td>Slightly Disagree</td> <td class="bubble"><input type="radio" name="lgbt3" value="-1"></td>
+					<td>Neutral</td>           <td class="bubble"><input type="radio" name="lgbt3" value="0"></td>
+					<td>Slightly Agree</td>    <td class="bubble"><input type="radio" name="lgbt3" value="1"></td>
+					<td>Agree</td>             <td class="bubble"><input type="radio" name="lgbt3" value="2"></td>
+					<td>Strongly Agree</td>    <td class="bubble"><input type="radio" name="lgbt3" value="3"></td>
+				</tr>
+			</table>
+
+			<h4>Abortion is murder</h4>
+			<table class="question">
+				<tr>
+					<td>Strongly Disagree</td> <td class="bubble"><input type="radio" name="abort4" value="3" required></td>
+					<td>Disagree</td>          <td class="bubble"><input type="radio" name="abort4" value="2"></td>
+					<td>Slightly Disagree</td> <td class="bubble"><input type="radio" name="abort4" value="1"></td>
+					<td>Neutral</td>           <td class="bubble"><input type="radio" name="abort4" value="0"></td>
+					<td>Slightly Agree</td>    <td class="bubble"><input type="radio" name="abort4" value="-1"></td>
+					<td>Agree</td>             <td class="bubble"><input type="radio" name="abort4" value="-2"></td>
+					<td>Strongly Agree</td>    <td class="bubble"><input type="radio" name="abort4" value="-3"></td>
+				</tr>
+			</table>
+
+			<h4>Gay and Lesbian couples deserve the same marrage rights as heterosexual couples</h4>
+			<table class="question">
+				<tr>
+					<td>Strongly Disagree</td> <td class="bubble"><input type="radio" name="lgbt4" value="-3" required></td>
+					<td>Disagree</td>          <td class="bubble"><input type="radio" name="lgbt4" value="-2"></td>
+					<td>Slightly Disagree</td> <td class="bubble"><input type="radio" name="lgbt4" value="-1"></td>
+					<td>Neutral</td>           <td class="bubble"><input type="radio" name="lgbt4" value="0"></td>
+					<td>Slightly Agree</td>    <td class="bubble"><input type="radio" name="lgbt4" value="1"></td>
+					<td>Agree</td>             <td class="bubble"><input type="radio" name="lgbt4" value="2"></td>
+					<td>Strongly Agree</td>    <td class="bubble"><input type="radio" name="lgbt4" value="3"></td>
+				</tr>
+			</table>
+
+			<h4>Guns don't kill people, people kill people</h4>
+			<table class="question">
+				<tr>
+					<td>Strongly Disagree</td> <td class="bubble"><input type="radio" name="gun3" value="3" required></td>
+					<td>Disagree</td>          <td class="bubble"><input type="radio" name="gun3" value="2"></td>
+					<td>Slightly Disagree</td> <td class="bubble"><input type="radio" name="gun3" value="1"></td>
+					<td>Neutral</td>           <td class="bubble"><input type="radio" name="gun3" value="0"></td>
+					<td>Slightly Agree</td>    <td class="bubble"><input type="radio" name="gun3" value="-1"></td>
+					<td>Agree</td>             <td class="bubble"><input type="radio" name="gun3" value="-2"></td>
+					<td>Strongly Agree</td>    <td class="bubble"><input type="radio" name="gun3" value="-3"></td>
+				</tr>
+			</table>
+
+			<h4>I'm in favor of acceting Syrian Refugees into America</h4>
+			<table class="question">
+				<tr>
+					<td>Strongly Disagree</td> <td class="bubble"><input type="radio" name="ref4" value="-3" required></td>
+					<td>Disagree</td>          <td class="bubble"><input type="radio" name="ref4" value="-2"></td>
+					<td>Slightly Disagree</td> <td class="bubble"><input type="radio" name="ref4" value="-1"></td>
+					<td>Neutral</td>           <td class="bubble"><input type="radio" name="ref4" value="0"></td>
+					<td>Slightly Agree</td>    <td class="bubble"><input type="radio" name="ref4" value="1"></td>
+					<td>Agree</td>             <td class="bubble"><input type="radio" name="ref4" value="2"></td>
+					<td>Strongly Agree</td>    <td class="bubble"><input type="radio" name="ref4" value="3"></td>
+				</tr>
+			</table>
+
+			<h4>I'm pro-choice</h4>
+			<table class="question">
+				<tr>
+					<td>Strongly Disagree</td> <td class="bubble"><input type="radio" name="abort5" value="-3" required></td>
+					<td>Disagree</td>          <td class="bubble"><input type="radio" name="abort5" value="-2"></td>
+					<td>Slightly Disagree</td> <td class="bubble"><input type="radio" name="abort5" value="-1"></td>
+					<td>Neutral</td>           <td class="bubble"><input type="radio" name="abort5" value="0"></td>
+					<td>Slightly Agree</td>    <td class="bubble"><input type="radio" name="abort5" value="1"></td>
+					<td>Agree</td>             <td class="bubble"><input type="radio" name="abort5" value="2"></td>
+					<td>Strongly Agree</td>    <td class="bubble"><input type="radio" name="abort5" value="3"></td>
+				</tr>
+			</table>
+
+			<h4>The health effects of marajuana use are no worse than the health effects of alchohol </h4>
+			<table class="question">
+				<tr>
+					<td>Strongly Disagree</td> <td class="bubble"><input type="radio" name="mj4" value="-3" required></td>
+					<td>Disagree</td>          <td class="bubble"><input type="radio" name="mj4" value="-2"></td>
+					<td>Slightly Disagree</td> <td class="bubble"><input type="radio" name="mj4" value="-1"></td>
+					<td>Neutral</td>           <td class="bubble"><input type="radio" name="mj4" value="0"></td>
+					<td>Slightly Agree</td>    <td class="bubble"><input type="radio" name="mj4" value="1"></td>
+					<td>Agree</td>             <td class="bubble"><input type="radio" name="mj4" value="2"></td>
+					<td>Strongly Agree</td>    <td class="bubble"><input type="radio" name="mj4" value="3"></td>
+				</tr>
+			</table>
+
+			<h4>A transgender person has the right to use whatever bathroom they want</h4>
+			<table class="question">
+				<tr>
+					<td>Strongly Disagree</td> <td class="bubble"><input type="radio" name="lgbt5" value="-3" required></td>
+					<td>Disagree</td>          <td class="bubble"><input type="radio" name="lgbt5" value="-2"></td>
+					<td>Slightly Disagree</td> <td class="bubble"><input type="radio" name="lgbt5" value="-1"></td>
+					<td>Neutral</td>           <td class="bubble"><input type="radio" name="lgbt5" value="0"></td>
+					<td>Slightly Agree</td>    <td class="bubble"><input type="radio" name="lgbt5" value="1"></td>
+					<td>Agree</td>             <td class="bubble"><input type="radio" name="lgbt5" value="2"></td>
+					<td>Strongly Agree</td>    <td class="bubble"><input type="radio" name="lgbt5" value="3"></td>
+				</tr>
+			</table>
+
+			<h4>Current gun control laws are too loose, and need to be tightened</h4>
+			<table class="question">
+				<tr>
+					<td>Strongly Disagree</td> <td class="bubble"><input type="radio" name="gun4" value="-3" required></td>
+					<td>Disagree</td>          <td class="bubble"><input type="radio" name="gun4" value="-2"></td>
+					<td>Slightly Disagree</td> <td class="bubble"><input type="radio" name="gun4" value="-1"></td>
+					<td>Neutral</td>           <td class="bubble"><input type="radio" name="gun4" value="0"></td>
+					<td>Slightly Agree</td>    <td class="bubble"><input type="radio" name="gun4" value="1"></td>
+					<td>Agree</td>             <td class="bubble"><input type="radio" name="gun4" value="2"></td>
+					<td>Strongly Agree</td>    <td class="bubble"><input type="radio" name="gun4" value="3"></td>
+				</tr>
+			</table>
+
+			<h4>A travel ban from Muslim Countries would make America safer</h4>
+			<table class="question">
+				<tr>
+					<td>Strongly Disagree</td> <td class="bubble"><input type="radio" name="ref5" value="3" required></td>
+					<td>Disagree</td>          <td class="bubble"><input type="radio" name="ref5" value="2"></td>
+					<td>Slightly Disagree</td> <td class="bubble"><input type="radio" name="ref5" value="1"></td>
+					<td>Neutral</td>           <td class="bubble"><input type="radio" name="ref5" value="0"></td>
+					<td>Slightly Agree</td>    <td class="bubble"><input type="radio" name="ref5" value="-1"></td>
+					<td>Agree</td>             <td class="bubble"><input type="radio" name="ref5" value="-2"></td>
+					<td>Strongly Agree</td>    <td class="bubble"><input type="radio" name="ref5" value="-3"></td>
+				</tr>
+			</table>
+
+			<h4>The exisitence of Planned Parrenthood is good for America</h4>
+			<table class="question">
+				<tr>
+					<td>Strongly Disagree</td> <td class="bubble"><input type="radio" name="abort6" value="-3" required></td>
+					<td>Disagree</td>          <td class="bubble"><input type="radio" name="abort6" value="-2"></td>
+					<td>Slightly Disagree</td> <td class="bubble"><input type="radio" name="abort6" value="-1"></td>
+					<td>Neutral</td>           <td class="bubble"><input type="radio" name="abort6" value="0"></td>
+					<td>Slightly Agree</td>    <td class="bubble"><input type="radio" name="abort6" value="1"></td>
+					<td>Agree</td>             <td class="bubble"><input type="radio" name="abort6" value="2"></td>
+					<td>Strongly Agree</td>    <td class="bubble"><input type="radio" name="abort6" value="3"></td>
+				</tr>
+			</table>
+
+			<h4>Marajuana should stay illegal </h4>
+			<table class="question">
+				<tr>
+					<td>Strongly Disagree</td> <td class="bubble"><input type="radio" name="mj5" value="3" required></td>
+					<td>Disagree</td>          <td class="bubble"><input type="radio" name="mj5" value="2"></td>
+					<td>Slightly Disagree</td> <td class="bubble"><input type="radio" name="mj5" value="1"></td>
+					<td>Neutral</td>           <td class="bubble"><input type="radio" name="mj5" value="0"></td>
+					<td>Slightly Agree</td>    <td class="bubble"><input type="radio" name="mj5" value="-1"></td>
+					<td>Agree</td>             <td class="bubble"><input type="radio" name="mj5" value="-2"></td>
+					<td>Strongly Agree</td>    <td class="bubble"><input type="radio" name="mj5" value="-3"></td>
+				</tr>
+			</table>
+
+			<h4>Homosexuality is morally wrong</h4>
+			<table class="question">
+				<tr>
+					<td>Strongly Disagree</td> <td class="bubble"><input type="radio" name="lgbt6" value="3" required></td>
+					<td>Disagree</td>          <td class="bubble"><input type="radio" name="lgbt6" value="2"></td>
+					<td>Slightly Disagree</td> <td class="bubble"><input type="radio" name="lgbt6" value="1"></td>
+					<td>Neutral</td>           <td class="bubble"><input type="radio" name="lgbt6" value="0"></td>
+					<td>Slightly Agree</td>    <td class="bubble"><input type="radio" name="lgbt6" value="-1"></td>
+					<td>Agree</td>             <td class="bubble"><input type="radio" name="lgbt6" value="-2"></td>
+					<td>Strongly Agree</td>    <td class="bubble"><input type="radio" name="lgbt6" value="-3"></td>
+				</tr>
+			</table>
+
+			<h4>Having access to firearms is a fundemental right </h4>
+			<table class="question">
+				<tr>
+					<td>Strongly Disagree</td> <td class="bubble"><input type="radio" name="gun5" value="3" required></td>
+					<td>Disagree</td>          <td class="bubble"><input type="radio" name="gun5" value="2"></td>
+					<td>Slightly Disagree</td> <td class="bubble"><input type="radio" name="gun5" value="1"></td>
+					<td>Neutral</td>           <td class="bubble"><input type="radio" name="gun5" value="0"></td>
+					<td>Slightly Agree</td>    <td class="bubble"><input type="radio" name="gun5" value="-1"></td>
+					<td>Agree</td>             <td class="bubble"><input type="radio" name="gun5" value="-2"></td>
+					<td>Strongly Agree</td>    <td class="bubble"><input type="radio" name="gun5" value="-3"></td>
+				</tr>
+			</table>
+
+			<h4>Muslim immigrants pose an inherienty greater threat to America than Christan immigrants </h4>
+			<table class="question">
+				<tr>
+					<td>Strongly Disagree</td> <td class="bubble"><input type="radio" name="ref6" value="3" required></td>
+					<td>Disagree</td>          <td class="bubble"><input type="radio" name="ref6" value="2"></td>
+					<td>Slightly Disagree</td> <td class="bubble"><input type="radio" name="ref6" value="1"></td>
+					<td>Neutral</td>           <td class="bubble"><input type="radio" name="ref6" value="0"></td>
+					<td>Slightly Agree</td>    <td class="bubble"><input type="radio" name="ref6" value="-1"></td>
+					<td>Agree</td>             <td class="bubble"><input type="radio" name="ref6" value="-2"></td>
+					<td>Strongly Agree</td>    <td class="bubble"><input type="radio" name="ref6" value="-3"></td>
+				</tr>
+			</table>
+
+			<h4>I'm in favor of more gun control legislation</h4>
+			<table class="question">
+				<tr>
+					<td>Strongly Disagree</td> <td class="bubble"><input type="radio" name="gun6" value="-3" required></td>
+					<td>Disagree</td>          <td class="bubble"><input type="radio" name="gun6" value="-2"></td>
+					<td>Slightly Disagree</td> <td class="bubble"><input type="radio" name="gun6" value="-1"></td>
+					<td>Neutral</td>           <td class="bubble"><input type="radio" name="gun6" value="0"></td>
+					<td>Slightly Agree</td>    <td class="bubble"><input type="radio" name="gun6" value="1"></td>
+					<td>Agree</td>             <td class="bubble"><input type="radio" name="gun6" value="2"></td>
+					<td>Strongly Agree</td>    <td class="bubble"><input type="radio" name="gun6" value="3"></td>
+				</tr>
+			</table>
+
+			<h4>Marajuana has very few negative health effects when used resposibly by adults over 21 </h4>
+			<table class="question">
+				<tr>
+					<td>Strongly Disagree</td> <td class="bubble"><input type="radio" name="mj6" value="-3" required></td>
+					<td>Disagree</td>          <td class="bubble"><input type="radio" name="mj6" value="-2"></td>
+					<td>Slightly Disagree</td> <td class="bubble"><input type="radio" name="mj6" value="-1"></td>
+					<td>Neutral</td>           <td class="bubble"><input type="radio" name="mj6" value="0"></td>
+					<td>Slightly Agree</td>    <td class="bubble"><input type="radio" name="mj6" value="1"></td>
+					<td>Agree</td>             <td class="bubble"><input type="radio" name="mj6" value="2"></td>
+					<td>Strongly Agree</td>    <td class="bubble"><input type="radio" name="mj6" value="3"></td>
+				</tr>
+			</table>
+
+
+			<div style="text-align:center;">
+				<input class="submit" type="submit" value="SUBMIT SURVEY">
+			</div>
+
+			<script type="text/javascript">
+				function validateForm() {
+    				var x = document.forms["form"]["name"].value;
+    				if (x == "") {
+        				alert("Name must be filled out");
+        			return false;
+    			}
+} 
+			</script>
+			
+
+	</form>
+
+	</body>
+
+</html>

@@ -27,7 +27,7 @@ def getScore(topic, form): #returns the calculated score for the inputed questio
 	
   	return (str2num[q1] + str2num[q2] + str2num[q3] + str2num[q4] + str2num[q5] + str2num[q6]);
   	
-def getMaxTopic(form):
+def getMaxTopic(form): #returns topic user feels strongest about
 	#Make conversion tables
 	index2topic = {0:"mj", 1:"lgbt", 2:"gun", 3:"ref", 4:"abort"}
 	
@@ -61,7 +61,8 @@ form = cgi.FieldStorage()
 name = form['name'].value
 email = form['email'].value
 password = form['password'].value
-date = form['date'].value
+dateMonth = form['dateMonth'].value
+dateDay = form['dateDay'].value
 time = form['time'].value
 
 mj = getScore("mj", form)
@@ -75,46 +76,53 @@ maxTopic = getMaxTopic(form)
 #Create accounts database and users table if they do not exist
 conn = sqlite3.connect('accounts.db')
 c = conn.cursor()
-c.execute('INSERT into users VALUES (?,?,?,?,?)', (name, email, password, date, time))
+c.execute('CREATE TABLE IF NOT EXISTS users(name varchar(100) PRIMARY KEY, email varchar(100), password varchar(100), dateMonth INT, dateDay INT, time varchar(100))')
+c.execute('CREATE TABLE IF NOT EXISTS surveyData(name varchar(100) PRIMARY KEY, mj INT, lgbt INT, gun INT, ref INT, abort INT, maxTopic varchar(100))')
+c.execute('INSERT into users VALUES (?,?,?,?,?,?)', (name, email, password, dateMonth, dateDay, time))
 c.execute('INSERT into surveyData VALUES (?,?,?,?,?,?,?)', (name, mj, lgbt, gun, ref, abort, maxTopic))
+
 
 print 'Content-Type: text/html'
 print
-print '''<html>
-  <head>
-    <title>Survey Results</title>
-  </head>
-  <body>''' 
-c.execute('SELECT * FROM users ')
-infoFormat = '%-6s%-15s%-12s%-14s%-8s'
-print infoFormat % ('name', 'email', 'password', 'date', 'time')
-print '<BR>' 
-print '-' * 54
-print '<BR>'
-for row in c:
-    print infoFormat % row
-    print '<BR>'
+print 'Account Created'
 
-print '<BR>'
-print '<BR>'
+# print 'Content-Type: text/html'
+# print
+# print '''<html>
+#   <head>
+#     <title>Survey Results</title>
+#   </head>
+#   <body>''' 
+# c.execute('SELECT * FROM users ')
+# infoFormat = '%-6s%-15s%-12s%-14s%-8s'
+# print infoFormat % ('name', 'email', 'password', 'date', 'time')
+# print '<BR>' 
+# print '-' * 54
+# print '<BR>'
+# for row in c:
+#     print infoFormat % row
+#     print '<BR>'
 
-c.execute('SELECT * FROM surveyData ')
-dataFormat = '%-6s%-6s%-6s%-6s%-6s%-6s%-8s'
-print dataFormat % ('name', 'mj', 'lgbt', 'gun', 'ref', 'abort', 'MAX')
-print '<BR>'
-print '-' * 54
-print '<BR>'
-for row in c:
-    print dataFormat % row
-    print '<BR>'
+# print '<BR>'
+# print '<BR>'
 
-print '''</body>
-  </html>'''
+# c.execute('SELECT * FROM surveyData ')
+# dataFormat = '%-6s%-6s%-6s%-6s%-6s%-6s%-8s'
+# print dataFormat % ('name', 'mj', 'lgbt', 'gun', 'ref', 'abort', 'MAX')
+# print '<BR>'
+# print '-' * 54
+# print '<BR>'
+# for row in c:
+#     print dataFormat % row
+#     print '<BR>'
+
+# print '''</body>
+#   </html>'''
 
 
 
 
-#conn.commit()
+conn.commit()
 
 conn.close()
 

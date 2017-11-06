@@ -5,17 +5,65 @@
 	<head>
 		<title> Charity Protocol </title>
 		<link rel="stylesheet" href="css/surveyLayout.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+		<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
 	</head>
 
 	<body class="container">
 
 		<form name="form" method="post" action="../cgi-bin/survey.py" >
 			<h2>Create Account</h2>
-			UserName: <input type="text" name="name" required><BR>
-      		Email:    <input type="text" name="email" required><BR>
-      		Password: <input type="text" name="password" required><BR>
-      		Date: <input type="text" name="date" required><BR>
-      		Time: <input type="text" name="time" required><BR>
+			UserName: <input id="name" type="text" name="name" required><BR>
+      		Email:    <input id="email" type="text" name="email" required><BR>
+      		Password: <input id="password" type="text" name="password" required><BR>
+      		Date of Game Session:  <select id="dateMonth" name="dateMonth">
+  									<option value="1">January</option>
+  									<option value="2">February</option>
+  									<option value="3">March</option>
+  									<option value="4">April</option>
+  									<option value="5">May</option>
+  									<option value="6">June</option>
+  									<option value="7">July</option>
+  									<option value="8">August</option>
+  									<option value="9">September</option>
+  									<option value="10">October</option>
+  									<option value="11">November</option>
+  									<option value="12">December</option>
+								</select> 
+								 <select id="dateDay" name="dateDay">
+  									<option value="1">1</option>
+  									<option value="2">2</option>
+  									<option value="3">3</option>
+  									<option value="4">4</option>
+  									<option value="5">5</option>
+  									<option value="6">6</option>
+  									<option value="7">7</option>
+  									<option value="8">8</option>
+  									<option value="9">9</option>
+  									<option value="10">10</option>
+  									<option value="11">11</option>
+  									<option value="12">12</option>
+  									<option value="13">13</option>
+  									<option value="14">14</option>
+  									<option value="15">15</option>
+  									<option value="16">16</option>
+  									<option value="17">17</option>
+  									<option value="18">18</option>
+  									<option value="19">19</option>
+  									<option value="20">20</option>
+  									<option value="21">21</option>
+  									<option value="22">22</option>
+  									<option value="23">23</option>
+  									<option value="24">24</option>
+  									<option value="25">25</option>
+  									<option value="26">26</option>
+  									<option value="27">27</option>
+  									<option value="28">28</option>
+  									<option value="29">29</option>
+  									<option value="30">30</option>
+  									<option value="31">31</option>
+								</select> <BR>
+      		Time: <input id="time" type="text" name="time" required><BR>
 	
 			<h2>How Strongly Do You Agree or Disagree With The Following Statments</h2>
 
@@ -412,20 +460,38 @@
 
 			<div style="text-align:center;">
 				<input class="submit" type="submit" value="SUBMIT SURVEY">
+				
 			</div>
 
-			<script type="text/javascript">
-				function validateForm() {
-    				var x = document.forms["form"]["name"].value;
-    				if (x == "") {
-        				alert("Name must be filled out");
-        			return false;
-    			}
-} 
-			</script>
-			
-
 	</form>
+	<button onclick="button()">Click me</button>
+	<script type="text/javascript">
+				function sendForm(arg) { //function that sends form data to python file 
+    				$.post("../cgi-bin/survey.py", arg, function (result) {
+						alert(result);
+							
+					});
+				}
+
+				function checkValue(arg) {
+    				$.post("../cgi-bin/checkVal.py", arg, function (result){
+    					alert(result);
+    				});
+
+				}
+
+				function button(){
+					var args = {
+							"name": "test"
+						};
+
+					checkValue(args);
+				};
+
+
+				
+				
+	</script>
 
 	</body>
 
